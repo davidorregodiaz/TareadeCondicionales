@@ -6,13 +6,21 @@ public class Main {
     public static void main(String[] args) {
         int num;
 
-        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        num = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero entero positivo: "));
 
-        if(num%2==0){
-            JOptionPane.showMessageDialog(null,"El numero digitado es par" );
-        }else{
-            JOptionPane.showMessageDialog(null,"El numero digitado es impar" );
+        if(num>0){
+            if(num%2==0){
+                JOptionPane.showMessageDialog(null,"El numero digitado es par" );
+            }else{
+                JOptionPane.showMessageDialog(null,"El numero digitado es impar" );
+            }
+            }else{
+            JOptionPane.showMessageDialog(null,"Error dato invalido" );
         }
+
+
+
+
 
     }
 }
